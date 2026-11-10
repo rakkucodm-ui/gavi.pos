@@ -1,12 +1,14 @@
 # GAVI POS
 
-Sistema de punto de venta para una tienda de abarrotes. Reúne ventas, inventario y caja por vendedor en una red local.
+Proyecto de punto de venta para una tienda de abarrotes. La aplicación registra ventas y caja por vendedor, comparte stock entre presentaciones y permite sincronizar ventas pendientes desde Android.
 
-- **Ventas:** perfiles con PIN, clientes registrados o de paso e historial por vendedor.
-- **Inventario:** el stock se comparte entre presentaciones como caja y unidad.
-- **Android sin conexión:** permite guardar ventas pendientes después de preparar una caja en línea y sincronizarlas cuando vuelve la conexión al servidor.
-- **Tickets:** impresión térmica de 58 y 80 mm y exportación a PDF e imagen.
+## Código de muestra
 
-**Tecnologías:** Python, SQLite, HTML, CSS, JavaScript y Android WebView.
+| Módulo | Función |
+| --- | --- |
+| `src/shared-stock.mjs` | Cálculo de cantidades y stock compartido |
+| `src/sale-amount.mjs` | Conversión de importe a cantidad |
+| `src/product-search.mjs` | Búsqueda de productos |
+| `src/receipt.mjs` | Formato de tickets para 58 y 80 mm |
 
-Este repositorio público presenta el proyecto. No contiene código fuente ni datos de la tienda.
+El sistema original usa Python, SQLite, HTML, CSS, JavaScript y Android WebView. Esta muestra reúne módulos independientes; no incluye el servidor completo, la APK, el catálogo de la tienda ni datos de operación.
